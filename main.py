@@ -12,7 +12,7 @@ def open_file_dialog():
         global pdf_files
         global array_char
         pdf_files.append(f"{file_paths[0]}")
-        array_char += "\n" + f"{file_paths[0]}"
+        array_char += f"\n{file_paths[0]}"
         file_label.config(text=f"選択したファイル{array_char}")
 
 def open_directory_dialog():
